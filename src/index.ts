@@ -7,7 +7,7 @@ reader.read();
 let manUtdWins = 0;
 
 for (let match of reader.data) {
-  if (match[0] === 'Man United' && match[5] === MatchResult.HomeWin) {
+  if (match[1] === 'Man United' && match[5] === MatchResult.HomeWin) {
     manUtdWins++;
   } else if (match[2] === 'Man United' && match[5] === MatchResult.AwayWin) {
     manUtdWins++;
